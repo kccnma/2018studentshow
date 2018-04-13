@@ -1,36 +1,415 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <title>New Media Arts</title>
+    <meta charset="UTF-8">
+    <title>NEXUS - 2018 KCC NMA Student Show</title>
 
     <!-- HTML5 -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <!--[if lt IE9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
     <!-- VIEWPORT FOR MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- MAIN CSS FILE -->
+    <!-- MAIN CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-
 </head>
 
 <body>
+    <header>
+		<div class="container">
+			<div class="navicon">
+				<div class="navicon-box">
+					<div class="navicon-inner"></div>
+				</div>
+			</div>
+			
+			<nav id="menu" class="close">
+				<ul>
+					<li>
+						<a class="scroll" href="#invitation">Show Information</a>
+					</li>
+					<li>
+						<a class="scroll" href="#network">NMA Students</a>
+					</li>
+					<li>
+						<a class="scroll" href="#sponsors">Show Sponsors</a>
+					</li>
+					<li>
+						<a class="scroll" href="#kcc">About Program</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+    </header>
 
-	<img src="img/savethedate2.gif" alt="Save the Date" />
+    <main>
+        <div id="hero" class="container">
+			<div id="large-header" class="large-header">
+				<canvas id="demo-canvas"></canvas>
+                <img src="images/hero/text.png" alt="05-09-2018 NEXUS" class="scale-with-grid">
+				<h3 class="main-title">Creatives Expanding Connections</h3>
+			</div>
+			
+			<div class="connect">
+				<p>Connect With Us</p>
+			</div>
+			
+			<div class="revealer">
+				<div id="dot1" class="dot"></div>
+				<div id="line1" class="line"></div>
+			</div>
+        </div>
+
+        <div id="invitation" class="container">
+			<div class="revealer">
+				<div id="dot2" class="dot"></div>
+				<div id="line2" class="line"></div>
+			</div>
+			
+            <div class="one-whole centered column">
+                <h1>Please Join Us</h1>
+				
+				<div class="revealer">
+					<div id="dot3" class="dot"></div>
+					<div id="line3" class="line"></div>
+				</div>
+				
+                <p>As we showcase the work of the graduating students from the New&nbsp;Media&nbsp;Arts&nbsp;Program at Kapiʻolani&nbsp;Community&nbsp;College</p>
+			</div>
+			
+			<div class="one-third column">
+				<h6>May, 2018</h6>
+				<div class="circle">
+					<h1>9</h1>
+				</div>
+				<h6>Wednesday</h6>
+			</div>
+			
+			<div class="one-third column">
+				<h6>Time</h6>
+				<div class="time">
+					<div class="circle">
+						<h6>5:30</h6>
+						<p>PM</p>
+					</div>
+					<div class="circle">
+						<h6>8:30</h6>
+						<p>PM</p>
+					</div>
+				</div>
+				<h6>Location</h6>
+				<p>Lama Library<br>
+				Kapiʻolani Community College<br>
+				4303 Diamond Head Road<br>
+				Honolulu, HI 96816</p>
+			</div>
+			
+			<div class="one-third column">
+				<h6>Premiere</h6>
+				<p>The Animation students will premeire their practicum short around 7:30PM with a Q &amp; A to&nbsp;follow</p>
+				<p class="italic">*Light hors d'oeuvre and refreshments will be&nbsp;served</p>
+				
+				<div class="revealer">
+					<div id="dot4" class="dot"></div>
+					<div id="line4" class="line"></div>
+				</div>
+			</div>
+        </div>
+
+        <div id="network" class="container">
+			<div class="revealer">
+				<div id="dot5" class="dot"></div>
+				<div id="line5" class="line"></div>
+			</div>
+			
+            <div class="one-whole centered column">
+                <h1>Network With</h1>
+                <div id="sort" class="controls">
+                    <button class="control-btn filter active" data-rel="all">all</button>
+                    <button class="control-btn filter" data-rel="anim">animation</button>
+                    <button class="control-btn filter" data-rel="inter">interface</button>
+                </div>	
+				<div class="revealer">
+					<div id="dot6" class="dot"></div>
+					<div id="line6" class="line"></div>
+				</div>
+            </div>
+            <div style="clear:both"></div>
+            <div id="gallery-thumbnails">
+                <div class="gallery-cell scaled inter all">
+					<a href="http://stephanbradley.net/" class="img-btn" target="_blank">
+						<img src="images/students/bradley-stephan.jpg" alt="Stephan Bradley" class="scale-with-grid thumbnail inter all">
+						<article class="overlay o-3">
+							<h5>Stephan Bradley</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled inter all">
+					<a href="http://www.rezaserra.com/" class="img-btn" target="_blank">
+						<img src="images/students/crum-mahsa.jpg" alt="Mahsa Crum" class="scale-with-grid thumbnail inter all">
+						<article class="overlay o-1">
+							<h5>Mahsa Crum</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled anim all">
+					<a href="#" class="img-btn" target="_blank">
+						<img src="images/students/gilmoon-junior.jpg" alt="Junior Gilmoon" class="scale-with-grid thumbnail anim all">
+						<article class="overlay o-2">
+							<h5>Junior Gilmoon</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled inter all">
+					<a href="http://shan-kg.com" class="img-btn" target="_blank">
+						<img src="images/students/goo-shannon.jpg" alt="Shannon Goo" class="scale-with-grid thumbnail inter all">
+						<article class="overlay o-2">
+							<h5>Shannon Goo</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled inter all">
+					<a href="http://fumikoko.com/" class="img-btn" target="_blank">
+						<img src="images/students/kojiro-fumiko.jpg" alt="Fumiko Kojiro" class="scale-with-grid thumbnail inter all">
+						<article class="overlay o-3">
+							<h5>Fumiko Kojiro</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled inter all">
+					<a href="http://coleenlochabay.com/" class="img-btn" target="_blank">
+						<img src="images/students/lochabay-coleen.jpg" alt="Coleen Lochabay" class="scale-with-grid thumbnail inter all">
+						<article class="overlay o-1">
+							<h5>Coleen Lochabay</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled inter all">
+					<a href="http://kimilung.com" class="img-btn" target="_blank">
+						<img src="images/students/lung-kimi.jpg" alt="Kimi Lung" class="scale-with-grid thumbnail inter all">
+						<article class="overlay o-3">
+							<h5>Kimi Lung</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled anim all">
+					<a href="#" class="img-btn" target="_blank">
+						<img src="images/students/momoki-brady.jpg" alt="Brady Momoki" class="scale-with-grid thumbnail anim all">
+						<article class="overlay o-2">
+							<h5>Brady Momoki</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled anim all">
+					<a href="#" class="img-btn" target="_blank">
+						<img src="images/students/noguchi-kimberly.jpg" alt="Kimberly Noguchi" class="scale-with-grid thumbnail anim all">
+						<article class="overlay o-1">
+							<h5>Kimberly Noguchi</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled inter all">
+					<a href="http://ginapeng.com/" class="img-btn" target="_blank">
+						<img src="images/students/peng-gina.jpg" alt="Gina Peng" class="scale-with-grid thumbnail inter all">
+						<article class="overlay o-2">
+							<h5>Gina Peng</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled inter all">
+					<a href="http://sharlene-p.com/" class="img-btn" target="_blank">
+						<img src="images/students/pennington-sharlene.jpg" alt="Sharlene Pennington" class="scale-with-grid thumbnail inter all">
+						<article class="overlay o-1">
+							<h5>Sharlene Pennington</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled inter all">
+					<a href="http://nickiralar.com/" class="img-btn" target="_blank">
+						<img src="images/students/ralar-nicki.jpg" alt="Nicki Ralar" class="scale-with-grid thumbnail inter all">
+						<article class="overlay o-3">
+							<h5>Nicki Ralar</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled inter all">
+					<a href="http://rensuzuki.com" class="img-btn" target="_blank">
+						<img src="images/students/suzuki-reyn.jpg" alt="Reyn Suzuki" class="scale-with-grid thumbnail inter all">
+						<article class="overlay o-3">
+							<h5>Reyn Suzuki</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled anim all">
+					<a href="#" class="img-btn" target="_blank">
+						<img src="images/students/tolmacheva-veronika.jpg" alt="Veronika Tolmacheva" class="scale-with-grid thumbnail anim all">
+						<article class="overlay o-2">
+							<h5>Veronika Tolmacheva</h5>
+						</article>
+					</a>
+				</div>
+                <div class="gallery-cell scaled inter all">
+					<a href="http://allyvi.com/" class="img-btn" target="_blank">
+						<img src="images/students/villanueva-allyson.jpg" alt="Allyson Villanueva" class="scale-with-grid thumbnail inter all">
+						<article class="overlay o-1">
+							<h5>Allyson Villanueva</h5>
+						</article>
+					</a>
+				</div>
+            </div>
+			<div style="clear:both"></div>
+			
+			<div class="revealer">
+				<div id="dot7" class="dot"></div>
+				<div id="line7" class="line"></div>
+			</div>
+        </div>
+		
+		<div id="sponsors" class="container">
+			<div class="revealer">
+				<div id="dot8" class="dot"></div>
+				<div id="line8" class="line"></div>
+			</div>
+			
+            <div class="one-whole centered column">
+                <h1>Special Thanks To</h1>
+			
+				<div class="revealer">
+					<div id="dot9" class="dot"></div>
+					<div id="line9" class="line"></div>
+				</div>
+			</div>
+			
+			<div class="one-whole centered column logos">
+				<div class="revealer">
+					<div id="dot10" class="dot"></div>
+					<div id="line10" class="line"></div>
+				</div>
+				<ul>
+					<li>
+						<a href="https://www.kapionews.com/index.php/student-congress/" target="_blank">
+							<img src="images/sponsors/askccsc_logo.svg" alt="Associated Student of Kapi'olani Community College Student Congress" class="scale-with-grid">
+						</a>
+					</li>
+					<li>
+						<a href="http://superfinedesign.net/" target="_blank">
+							<img src="images/sponsors/sfd_logo.svg" alt="Super Fine Design" class="scale-with-grid">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.kapionews.com/index.php/bosp/" target="_blank">
+							<img src="images/sponsors/bosp_logo.svg" alt="Kapi'olani Community College Board of Student Publication" class="scale-with-grid">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="additions">
+				<p>Our instructors for sharing their knowledge, pushing us to strive for our best, and encouraging us every step of&nbsp;the&nbsp;way.</p>
+				<p>And our friends &amp; family for their support.</p>
+				<div class="revealer">
+					<div id="dot11" class="dot"></div>
+					<div id="line11" class="line"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="kcc" class="container">
+			<div class="one-whole centered column">
+                <h1>New Media Arts @&nbsp;KCC</h1>
+				<div class="revealer">
+					<div id="dot12" class="dot"></div>
+					<div id="line12" class="line"></div>
+				</div>
+				<p>The New Media Arts (NMA) program is a two year AS degree program located at Kapi‘olani&nbsp;Community&nbsp;College&nbsp;(KCC) in Honolulu,&nbsp;Hawaii. The NMA mission is to prepare students for employment in the fields of interface design and&nbsp;animation.</p>
+			</div>
+				
+			<div class="revealer">
+				<div id="dot13" class="dot"></div>
+				<div id="line13" class="line"></div>
+			</div>
+			
+			<div class="one-whole column">
+				<div class="one-half column">
+					<h6>Animation</h6>
+					<p>The Animation track prepares students for careers in 3D computer animation, video game development, and emerging industries employing 3D computer graphics. Topics include the full CG pipeline, film analysis and storytelling, digital painting, and demo reel development.</p>
+				</div>
+				<div class="one-half column">
+					<h6>Interface Design</h6>
+					<p>The Interface Design track prepares students for careers as interface designers with a focus on web design. Topics include graphic design, web design, front-end interface programming, typography, graphic symbolism, digital multimedia, and motion graphic design.</p>
+				</div>
+			</div>
+			
+			<div class="one-whole column">
+				<div class="revealer">
+					<div id="dot14" class="dot"></div>
+					<div id="line14" class="line"></div>
+				</div>
+				
+				<button>
+					<a href="http://nma.kcc.hawaii.edu/" target="_blank">Learn More</a>
+				</button>
+			</div>
+		</div>
+		
+		<div id="footer" class="container">
+			
+			<div class="one-third column">
+				<h6>Date &amp; Time</h6>
+				<p>May 09, 2018</p>
+				<p>5:30PM &ndash; 8:30PM</p>
+				<h6>Location</h6>
+				<p>Lama Library<br>
+				Kapiʻolani Community College<br>
+				4303 Diamond Head Road<br>
+				Honolulu, HI 96816</p>
+			</div>
+			<div class="one-third column">
+				<div class="revealer">
+					<div id="dot15" class="dot"></div>
+				</div>
+				<div class="tile" data-scale="3" data-image="images/kcc_map.png"></div>
+			</div>
+			<div class="one-third column">
+				<h6>Parking</h6>
+				<p class="italic">Our first choice for parking is in Lot E, our second choice is Lot A. For handicap parking, please park in the lot directly behind the Lama Library &#40;by driving past Lot E and marking a left at the bend&#41;.</p>
+				<h6>Follow Us</h6>
+				<ul>
+					<li>
+						<a href="https://www.facebook.com/NewMediaArtsKCC/" target="_blank">
+							<img src="images/icons/facebook.png" alt="KCC NMA Facebook Page" class="scale-with-grid">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/newmediaartskcc/" target="_blank">
+							<img src="images/icons/instagram.png" alt="KCC NMA Instagram Account" class="scale-with-grid">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/user/kccnma" target="_blank">
+							<img src="images/icons/youtube.png" alt="KCC NMA Youtube Page" class="scale-with-grid">
+						</a>
+					</li>
+					<li>
+						<a href="http://nma.kcc.hawaii.edu/" target="_blank">
+							<img src="images/icons/web.png" alt="KCC NMA School Webpage" class="scale-with-grid">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </main>
+	
+	<!-- MAIN JS FILE -->
+    <script src="js/script-dist.js"></script>
+	
+	<!-- HERO ANIMATION -->
+	<script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
+	<script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
+	<script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
     
-    <h1><span>KAPIOLANI COMMUNITY COLLEGE</span><br />
-DEMO REEL &amp; PORTFOLIO SHOW</h1>
-
-	<p>
-		<span>LOCATION:</span> 4303 Diamond Head Rd, Honolulu, HI 96816<br />
-		<span>DATE:</span> Wednesday, May 09, 2018<br />
-		<span>TIME:</span> 5:30PM-8:30PM
-	</p>
-
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:200,400|Old+Standard+TT:400')
+
+/* #BASE START */
+/* #HTML5 */
+header, footer, aside, nav, section, figure, main, article
+  display: block
+  text-align: center
+
+
+/*--------------------------------- */
+
+
+
+/* #BASE CONTENT */
+
+/* #TYPOGRAPHY */
+/* #BODY */
+body 
+  font-family: 'Barlow', sans-serif
+  color: #fff
+  font-size: 100%
+  font-weight: 200
+  line-height: 1.5em
+  margin: 0
+  padding: 0
+
+.container
+	width: 92%
+	padding: 0 4%
+	margin: 0 auto
+
+/* #HEADINGS*/
+h1, h2, h3, h4, h5, h6
+	font-family: 'Old Standard TT', serif
+	color: #fff
+	font-weight: 400
+	padding: .5em 0
+	margin: 0
+	text-transform: uppercase
+	letter-spacing: 3px
+
+h1
+    font-size: 3em
+    line-height: 1em
+
+h2
+    font-size: 2.25em
+    line-height: 1.1em
+
+h3
+    font-size: 1.5em
+    line-height: 1.2em
+
+h4
+    font-size: 1.3125em
+    line-height: 1.3em
+
+h5
+    font-size: 1.125em
+    line-height: 1.4em
+
+h6
+    font-size: 1em
+    line-height: 1.5em
+
+/* #PARAGRAPHS */
+p 
+    margin: 0 0 .5em 0
+
+/* #LINKS */
+a 
+    color: #000;
+    text-decoration: none
+
+a:hover
+    color: #dfd9d1
+    text-decoration: none
+
+
+/* MEDIA QUERIES */
+/* SMALL MOBILE */
+
+
+/* MEDIUM TABLET */
+@media (max-width: 768px)
+	body
+		font-size: 100%
+		text-align: center
+
+	.container
+		width: 80%
+		padding: 0 10%
+		margin: 0 auto
+    
+    
+/* MEDIUM-LAPTOP */
+@media (min-width: 1050px)
+    body
+        font-size: 100%
+        text-align: center
+
+    .container
+        width: 900px
+        padding: 0 100px
+    
+
+/* LARGE-DESKTOP */
+@media (min-width: 1440px)
+    body
+        font-size: 112.5%
+    
+    .container 
+        width: 1100px
+    
+/* 4K-DESKTOP */
+@media(min-width: 2550px)
+	body
+		font-size: 115%
+	
+	.container
+		width: 1300px
+		padding: 0 400px
+    
+/* GRID */
+.column
+    margin-bottom: 2em
+	
+@media (min-width: 768px)
+	.column
+		float: left
+		margin-right: 8%
+
+	.one-whole
+		width: 100%
+
+	.one-half
+		width: 46%
+
+	.one-third
+		width: 28%
+
+	.two-thirds
+		width: 64%
+
+	.one-fourth
+		width: 19%
+
+	.centered
+		float: none
+		margin: 0 auto
+
+	.column:last-child
+		margin-right: 0
+
+    
+/* CLEARFIXES */
+.group:after,
+.container:after,
+.row:after
+    content: ""
+    display: table
+    clear: both
+
+    
+
+/* BUTTONS */
+button
+    font-size: inherit
+
+button
+	display: inline-block
+	font-family: "Barlow", sans-serif
+	color: #fff
+	font-size: 125%
+	text-transform: uppercase
+	letter-spacing: 1px
+	line-height: 2em
+	background-color: transparent
+	border: none
+	padding: 0
+	margin: 0 1em
+	vertical-align: middle
+	-webkit-transform: perspective(1px) translateZ(0)
+	transform: perspective(1px) translateZ(0)
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+	position: relative
+	overflow: hidden
+
+	a
+		color: #fff
+	
+button:after
+	content: ""
+	position: absolute
+	z-index: -1
+	left: 51%
+	right: 51%
+	bottom: 1px
+	background: #fff
+	height: 4px
+	-webkit-transition-property: left, right
+	transition-property: left, right
+	-webkit-transition-duration: 0.3s
+	transition-duration: 0.3s
+	-webkit-transition-timing-function: ease-out
+	transition-timing-function: ease-out
+	
+button:hover
+	text-decoration: none
+
+	a
+		color: #fff
+
+button:hover:after
+    left: 0
+    right: 0
+
+button:focus
+	outline: none
+
+button.active:after
+	content: ""
+	position: absolute
+	z-index: -1
+	left: 0
+	right: 0
+	bottom: 1px
+	background: #fff
+	height: 4px
+    
+    
+/* IMAGES */
+img.scale-with-grid
+    max-width: 100%
+    height: auto
+    
+    
+    
+/* --------------------------------- */
+
+
+
+/* BASE SITE */
+/* SITE STRUCTURE */
+
+/* HEADER */
+header
+	position: fixed
+	width: 100%
+	z-index: 5
+
+	.container
+		width: 100%
+		margin: 0
+		padding: 0
+
+.navicon
+	position: fixed
+	top: 0
+	right: 0
+	margin: 1.5em 1.5em 0 0
+	transition: opacity,filter .15s linear
+
+	.navicon-inner,
+	.navicon-inner:before,
+	.navicon-inner:after
+		background-color: #fff
+
+.navicon-box
+	position: relative
+	width: 40px
+	height: 40px
+
+.navicon-inner
+	top: 50%
+	display: block
+	margin-top: -2px
+	transition-timing-function: cubic-bezier(.19,1,.22,1)
+	transition-duration: .2s
+	
+.navicon-inner, .navicon-inner:before, .navicon-inner:after
+	position: absolute
+	width: 40px
+	height: 4px
+	transition-property: transform
+
+.navicon-inner:before, .navicon-inner:after
+	display: block
+	content: ""
+	transition-delay: .1s
+	transition-timing-function: linear
+	transition-duration: 0s
+
+.navicon-inner:before
+	top: -10px
+	transition-property: top, opacity
+
+.navicon-inner:after
+	bottom: -10px
+	transition-property: bottom, opacity
+
+.navicon.active
+	.navicon-inner,
+	.navicon-inner:after
+		background-color: #000
+		transition: .3s ease
+	
+	.navicon-inner
+		transition-timing-function: cubiz-bezier(.19,1,.22,1)
+		transform: rotate(765deg)
+
+	.navicon-inner:before, .navicon-inner:after
+		transition-delay: 0s
+	
+	.navicon-inner:before
+		top: 0
+		opacity: 0
+
+	.navicon-inner:after
+		bottom: 0
+		transform: rotate(90deg)
+
+.navicon.active:hover
+	.navicon-inner,
+	.navicon-inner:after
+		background-color: #51b0a0
+
+nav
+	width: 100%
+	background-color: #fff
+	z-index: 4
+
+	ul
+		margin: 0
+		padding: 2em 0
+		list-style: none
+
+		li
+			display: inline-block
+			position: relative
+			margin: 0 20%
+
+			a
+				text-transform: uppercase
+				font-weight: 400
+	
+			a:hover
+				color: #51b0a0
+				transition: .3s ease
+	
+			a:after
+				content: ""
+				position: absolute
+				z-index: 3
+				left: 51%
+				right: 51%
+				bottom: -4px
+				background: #51b0a0
+				height: 4px
+				-webkit-transition-property: left, right
+				transition-property: left, right
+				-webkit-transition-duration: 0.3s
+				transition-duration: 0.3s
+				-webkit-transition-timing-function: ease-out
+				transition-timing-function: ease-out
+
+			a:hover:after
+				left: 0
+				right: 0
+
+.open
+	display: flex
+
+.close
+	display: none
+
+@media (min-width: 375px)
+	.navicon
+		margin: 1em 1em 0 0
+
+	.navicon-box
+		width: 30px
+		height: 30px
+
+	.navicon-inner,
+	.navicon-inner:before,
+	.navicon-inner:after
+		width: 30px
+		height: 3px
+	
+	nav ul li
+		display: block
+		padding: .15em 0
+	
+	nav ul li a:after
+		display: none
+
+@media (min-width: 768px)
+	.navicon
+		margin: 1.5em 1.5em 0 0
+
+	.navicon-box
+		width: 40px
+		height: 40px
+
+	.navicon-inner,
+	.navicon-inner:before,
+	.navicon-inner:after
+		width: 40px
+		height: 4px
+	
+
+/* #MAIN */
+//#hero, #invitation, #network, #kcc, #footer
+	position: relative
+
+#hero
+	background-image: url("../images/hero/background.png")
+	background-size: cover
+	background-position: center
+	width: auto
+
+.large-header
+	position: relative
+	width: 100%
+	overflow: hidden
+	background-size: cover
+	background-position: center center
+	z-index: 1
+
+	img
+		position: absolute
+		margin: 0
+		padding: 0
+		top: 45%
+		left: 50%
+		transform: translate3d(-50%,-45%,0)
+		max-width: 80%
+
+	.main-title
+		position: absolute
+		margin: 0
+		padding: 0
+		top: 55%
+		left: 50%
+		transform: translate3d(-50%,-55%,0)
+		font-family: 'Barlow', sans-serif
+		color: #fff
+		font-weight: 400
+		text-trasnform: uppercase
+		letter-spacing: 1px
+		text-align: center
+		width: 100%
+
+.connect
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translateX(-50%)
+	z-index: 2
+
+	p
+		font-size: .75em
+		font-weight: 400
+		text-transform: uppercase
+		margin-bottom: 1em
+
+@media (min-width: 768px)
+	.large-header
+		.main-title
+			top: 57%
+			transform: translate3d(-50%,-57%,0)
+
+@media (min-width: 1110px)
+	.large-header
+		.main-title
+			top: 60%
+			transform: translate3d(-50%,-60%,0)
+
+@media (min-width: 1400px)
+	.large-header
+		.main-title
+			top: 64%
+			transform: translate3d(-50%,-64%,0)
+
+		
+
+@media (min-width: 768px)
+	.connect 
+		p
+			font-size: 1em
+
+#invitation
+	background-color: #201C24
+	height: auto
+	width: auto
+	padding-top: 5%
+	padding-bottom: 5%
+	text-align: center
+	
+.one-whole
+	margin-bottom: 5%
+
+	h1:after
+		content: '\2026'
+		display: block
+		margin: .25em 0
+		line-height: 0
+
+.circle
+	display: flex
+	flex-direction: column
+	justify-content: center
+	background-color: #fff 
+	width: 100px
+	height: 100px
+	margin: 0 auto
+	border-radius: 50%
+	
+	h1
+		color: #000
+		font-size: 4.5em
+		margin: 0
+		padding-bottom: 30px
+		padding-left: 5px
+
+.italic
+    font-style: italic
+
+.time
+	.circle
+		display: inline-block
+		position: relative
+		width: 55px
+		height: 55px
+		background-color: transparent
+		border: 2px solid #fff
+		margin: 0 1.25em 12.5% 1.25em
+
+	.circle:first-child:after
+		content: ""
+		position: absolute
+		top: 50%
+		left: 100%
+		height: 2px
+		width: 50px
+		background-color: #fff
+	
+	h6
+		margin: 0
+		padding: 13px 0 5px 0
+		line-height: 1em
+		letter-spacing: 0
+
+	p
+        font-family: 'Playfair Display SC', serif
+        font-size: 75%
+        line-height: 75%
+	
+@media(max-width: 768px)
+	.time
+		.circle
+			margin: 0 .75em 12.5% .75em
+
+		.circle:first-child:after
+			width: 30px
+
+#network
+	background-color: #EB5F65
+	width: auto
+	height: auto
+	padding-top: 5%
+	padding-bottom: 5%
+
+.controls
+	margin-top: -5px
+		
+#gallery-thumbnails
+	display: flex
+	flex-flow: row wrap
+	justify-content: flex-start
+	margin-top: 2em
+	margin-bottom: 2em
+
+.gallery-cell
+	width: calc(85% / 3)
+	margin: 0 2.5% 5% 2.5%
+	-webkit-transform: scale(0)
+	transform: scale(0)
+    -webkit-transition: all 1s ease
+	transition: all 1s ease
+	border-radius: 50%
+	text-align: center
+	overflow: hidden
+
+	a
+		display: grid
+		text-decoration: none
+		text-align: center
+
+.gallery-cell:focus
+	outline: none
+
+.gallery-cell a:focus
+	outline: none
+
+.scaled
+		transform: scale(1)
+
+img.thumbnail
+	filter: grayscale(100%)
+	border-radius: 50%
+	transition: transform 2.5s ease
+
+.overlay
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	height: 100%
+	width: 100%
+	opacity: 0
+	border-radius: 50%
+	transition: .5s ease
+
+.o-1
+	background-image: url("../images/overlays/1.png")
+	opacity: 0
+
+.o-2
+	background-image: url("../images/overlays/2.png")
+	opacity: 0
+
+.o-3
+	background-image: url("../images/overlays/3.png")
+	opacity: 0
+
+.gallery-cell h5
+	position: absolute
+	margin: 0
+	width: 70%
+	top: 70%
+	left: 50%
+	transform: translateX(-50%)
+	
+.gallery-cell:hover 
+	img.thumbnail
+		transform: scale(1.15)
+
+	.overlay 
+		opacity: .8
+		transition: .65s ease
+
+@media (max-width: 414px)
+	button
+		margin: 0 .5em
+
+	.gallery-cell
+		width: 100%
+		margin: 0 0 10% 0
+
+@media (min-width: 768px)
+	button
+		margin: 0 1em
+
+	.gallery-cell
+		width: calc(85% / 3)
+		margin: 0 2.5% 5% 2.5%
+
+
+
+#sponsors
+	background-color: #5A97A3
+	height: auto
+	width: auto
+	padding-top: 5%
+	padding-bottom: 5%
+	
+.logos
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+
+		li
+			display: inline-block
+			width: calc(90% / 3)
+
+		li:last-child
+			margin: 0
+
+.additions
+	margin: 0 auto
+	
+	p
+		margin-bottom: 2em
+	
+
+#kcc
+	background-color: #5F6D6C
+	height: auto
+	width: auto
+	padding-top: 5%
+	padding-bottom: 5%
+
+	button
+		background-color: rgba(256,256,256,.25)
+		padding: 0 1em
+		margin-top: 2em
+
+@media (max-width: 414px)
+	#kcc .one-whole.column p
+		margin: 0 0 1em 0
+
+@media (min-width: 768px)
+	#kcc .one-whole.column p
+		margin: 0 10% .5em 10%
+
+@media (min-width: 2000px)
+	#kcc .one-whole.column p
+		margin: 0 20% .5em 20%
+
+#footer
+	background-color: #201C24
+	height: auto
+	width: auto
+	padding-top: 5%
+	padding-bottom: 5%
+	text-align: center
+	font-size: 85%
+
+	.one-third.column p:nth-child(3n)
+		margin-bottom: 3.75em
+
+	.one-third.column:nth-child(3n) p
+		margin-bottom: 3.75em
+
+	ul
+		list-style: none
+		margin: .35em 0 0 0 
+		padding: 0
+
+		li
+			display: inline-block
+			width: 25px
+			height: auto
+			padding-right: 2em
+
+		li:last-child
+			padding-right:  0
+
+.tile
+	position: relative
+	width: 325px
+	height: 325px
+	margin: 0 auto
+	background-color: #fff
+	border-radius: 50%
+	overflow: hidden
+
+.image
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	transition: transform .5s ease-out
+
+@media (max-width: 375px)
+	.tile
+		left: -5%
+		transform: translateX(0)
+
+@media (max-width: 414px)
+	#footer
+		.column:first-child
+			margin-bottom: 4em
+
+		.one-third.column
+			h6:first-child
+				padding-top: 3em
+			p:nth-child(3n)
+				margin-bottom: 2em
+
+		.one-third.column:nth-child(3n) 
+			p
+				margin-bottom: 2em
+			
+		ul
+			margin-bottom: 2em
+
+@media (min-width: 768px)
+	#footer
+		.column:first-child
+			margin-bottom: 2em
+
+@media (width: 768px)
+	#footer
+		.one-third.column:first-child
+			height: 325px
+			display: flex
+			justify-content: center
+			align-content: center
+			flex-direction: column
+
+		.one-third.column:nth-child(2n)
+			width: 54%
+			margin-right: 0
+			float: right
+
+		.one-third.column:last-child
+			width: 100%
+
+@media (min-width: 1024px)
+	#footer
+		.one-third.column:first-child
+			width: 21%
+
+		.one-third.column:nth-child(2n)
+			width: 35%
+
+@media (min-width: 1250px)
+	#footer
+		.one-third.column:first-child
+			width: 28%
+
+		.one-third.column:nth-child(2n)
+			width: 28%
+
+
+/* DOT ANIMATION */
+.dot
+	position: relative 
+	width: 15px
+	height: 15px
+	border: 2px solid #fff
+	border-radius: 100%
+	z-index: 2
+
+#dot1
+	margin: 0 auto 3em auto
+
+#dot2
+	margin: -2em auto 3em auto
+
+#dot4
+	margin: 5em auto 0 auto
+
+#dot3,
+#dot6,
+#dot10,
+#dot11,
+#dot12
+	float: right
+
+#dot8,
+#dot14,
+#dot15
+	margin: 0 auto
+
+#dot11
+	margin-right: 25%
+
+#dot15
+	border: none
+	margin-bottom: -20px
+	
+.line
+	position: absolute
+	z-index: 2
+
+.line:before
+	content: ""
+	display: block
+	position: absolute
+	color: #fff
+	border-right: 1px solid rgba(256,256,256,.5)
+	top: 0
+	right: 0
+	height: 0
+	transition: all .60s ease-in-out 0s
+
+.active
+	.dot
+		background-color: #fff
+	
+	.line:before
+		height: 100%
+		transition: all 1s ease-in-out 0s
+
+	#dot15.dot
+		background-color: transparent
+
+.active #line3.line:before
+	transition-delay: .25s
+
+.active #line4.line:before
+	transition-delay: .25s
+
+.active #line5.line:before
+	transition-delay: .75s
+	
+#line6
+	z-index: 0
+	
+#line6.line:before
+	transition: all 2s ease-in-out 0s
+
+.active #line6.line:before
+	transition-delay: 1s
+
+.active #line8.line:before
+	transition-delay: .3s
+
+.active #line9.line:before
+	transition-delay: .5s
+
+.active #line10.line:before
+	transition-delay: .5s
+
+.active #line14.line:before
+	transition-delay: .3s
+	
+@media (max-width: 768px)
+	.dot
+		width: 15px
+		height: 15px
+
+@media (min-width: 769px)
+	.dot
+		width: 20px
+		height: 20px
